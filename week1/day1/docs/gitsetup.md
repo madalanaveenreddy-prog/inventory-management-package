@@ -83,7 +83,8 @@ git --version
 ```
 
 📸 Screenshot:
-![Git Version](week1/day1/assets/git-version.png)
+[Create Repository Button](week1/day1/assests/image copy.png)
+
 
 ---
 
@@ -97,7 +98,8 @@ git config --global user.email "you@example.com"
 ```
 
 📸 Screenshot:
-![Git Config](week1/day1/assets/git-config.png)
+[Create Repository Button](week1/day1/assests/image.png)
+
 
 ---
 
@@ -115,7 +117,8 @@ git clone <repo-url>
 ```
 
 📸 Screenshot:
-![Git Clone](week1/day1/assests/image copy 2.png)
+[Create Repository Button](week1/day1/assests/image copy.png)
+
 
 ---
 
@@ -133,8 +136,7 @@ git push origin main
 ```
 
 📸 Screenshot:
-![Git Push](week1/day1/assests/image copy 2.png)
-
+[Create Repository Button](week1/day1/assests/image copy.png)
 ---
 
 ## 🎯 Outcome
