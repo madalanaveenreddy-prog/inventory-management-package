@@ -115,7 +115,7 @@ git clone <repo-url>
 ```
 
 📸 Screenshot:
-![Git Clone](week1/day1/assets/git-clone.png)
+![Git Clone](week1/day1/assests/image copy 2.png)
 
 ---
 
@@ -133,7 +133,7 @@ git push origin main
 ```
 
 📸 Screenshot:
-![Git Push](week1/day1/assets/git-push.png)
+![Git Push](week1/day1/assests/image copy 2.png)
 
 ---
 
