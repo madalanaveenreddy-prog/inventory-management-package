@@ -71,3 +71,6 @@ Git commit output
 Git push success message
 
 /home/bitcot/inventory-management-package/week1/day1/assests/image copy 2.png
+week1/day1/assests/image copy 2.png
+week1/day1/assests/image copy.png
+week1/day1/assests/image.png
