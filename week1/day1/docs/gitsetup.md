@@ -44,7 +44,7 @@ source venv/bin/activate
 ```
 
 📸 Screenshot:
-![Virtual Environment Activation](week1/day1/assets/venv-activation.png)
+<!-- ![Virtual Environment Activation](../assests/image%20copy%202.png) -->
 
 ---
 
@@ -98,8 +98,8 @@ git config --global user.email "you@example.com"
 ```
 
 📸 Screenshot:
-[Create Repository Button](week1/day1/assests/image.png)
-
+<!-- [Create Repository Button](week1/day1/assests/image.png) -->
+![image](../assests/image.png)
 
 ---
 
@@ -117,7 +117,7 @@ git clone <repo-url>
 ```
 
 📸 Screenshot:
-[Create Repository Button](week1/day1/assests/image copy.png)
+[Create Repository Button](../assests/image%20copy.png)
 
 
 ---
@@ -136,7 +136,7 @@ git push origin main
 ```
 
 📸 Screenshot:
-[Create Repository Button](week1/day1/assests/image copy.png)
+![image](../assests/image%20copy%202.png)
 ---
 
 ## 🎯 Outcome
