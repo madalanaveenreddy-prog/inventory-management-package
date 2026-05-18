@@ -1,76 +1,176 @@
-📄 Day 1 Documentation — Environment & Git Setup
+Here is your **complete, clean, professional Day 1 Markdown file** (ready to copy into `README.md`):
 
-Set up a development environment and learn basic Git workflow for version control
+````markdown id="day1-full-md"
+# 📄 Day 1 Documentation — Environment & Git Setup
 
-1. Python Installation
-Installed Python on system
-Verified installation using:
+This document describes the setup of the development environment and basic Git workflow for version control.
 
- command  :   python --version
+---
 
+## 🎯 Objective
 
- 2. Virtual Environment Setup
+To set up Python development environment, configure VS Code, initialize Git, and practice basic Git commands.
 
-Created isolated environment for project:
-      python -m venv venv
+---
 
-Activated environment:
+## 1. 🐍 Python Installation
 
-source venv/bin/activate 
+Python was installed on the system and verified successfully.
 
-
-## 3. VS Code Setup
-
-Visual Studio Code (VS Code) was set up as the primary development environment for this project. It provides a lightweight but powerful editor with support for Python development and Git integration.
-
-### Steps Performed:
-- Installed Visual Studio Code on the system  
-- Opened the project folder (`inventory-management-package`) in VS Code  
-- Verified that Python interpreter is correctly detected  
-- Ensured proper workspace setup for development
+### ✅ Verification Command:
+```bash
+python --version
+````
 
 📸 Screenshot:
+![Python Version](week1/day1/assets/python-version.png)
 
-VS Code workspace open
-Extensions installed
-## 4. Git Installation & Configuration
+---
 
-Git was installed and configured to enable version control and track changes in the project efficiently. This ensures proper collaboration and history tracking of the codebase.
+## 2. 🧪 Virtual Environment Setup
+
+A virtual environment was created to isolate project dependencies and ensure clean package management.
+
+### ✅ Create Virtual Environment:
+
+```bash id="v1p2xq"
+python -m venv venv
+```
+
+### ✅ Activate Virtual Environment (Ubuntu/Linux):
+
+```bash id="c8m9ld"
+source venv/bin/activate
+```
+
+📸 Screenshot:
+![Virtual Environment Activation](week1/day1/assets/venv-activation.png)
+
+---
+
+## 3. 🖥️ VS Code Setup
+
+Visual Studio Code was configured as the primary development environment for Python development.
 
 ### Steps Performed:
 
-### 4.1 Git Installation Verification
-Checked whether Git is installed successfully by running:
+* Installed Visual Studio Code
+* Opened project folder (`inventory-management-package`)
+* Installed Python extension (Microsoft)
+* Verified Python interpreter selection
+* Configured workspace for development
 
+### 📸 Screenshots:
 
-Configured user details:
+* VS Code workspace opened
+  ![VS Code Workspace](week1/day1/assets/vscode-workspace.png)
 
-git config --global user.name ""
-git config --global user.email ""
+* Python extension installed
+  ![VS Code Extensions](week1/day1/assets/vscode-extensions.png)
 
-/home/bitcot/inventory-management-package/image.png
+---
 
+## 4. 🧾 Git Installation & Configuration
 
+Git was installed and configured for version control and tracking changes in the project.
 
-5. GitHub Repository Setup
-Created repository on GitHub
-Cloned repository locally:
+---
 
-/home/bitcot/inventory-management-package/week1/day1/assests/image copy.png
+### 4.1 🔍 Git Version Check
 
+```bash id="k3x8mp"
+git --version
+```
 
-6. Core Git Commands Practiced
+📸 Screenshot:
+![Git Version](week1/day1/assets/git-version.png)
+
+---
+
+### 4.2 👤 User Configuration
+
+Git was configured with user identity for commit tracking.
+
+```bash id="m9v4ld"
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+📸 Screenshot:
+![Git Config](week1/day1/assets/git-config.png)
+
+---
+
+## 5. 🌐 GitHub Repository Setup
+
+A GitHub repository was created and linked to the local project.
+
+### Steps Performed:
+
+* Created repository on GitHub
+* Cloned repository locally
+
+```bash id="p2n7qx"
+git clone <repo-url>
+```
+
+📸 Screenshot:
+![Git Clone](week1/day1/assets/git-clone.png)
+
+---
+
+## 6. ⚙️ Core Git Commands Practiced
+
+Basic Git workflow commands were practiced for version control.
+
+### Commands Used:
+
+```bash id="t5v8mp"
 git status
 git add .
 git commit -m "Initial setup"
 git push origin main
+```
 
 📸 Screenshot:
+![Git Push](week1/day1/assets/git-push.png)
 
-Git commit output
-Git push success message
+---
 
-/home/bitcot/inventory-management-package/week1/day1/assests/image copy 2.png
-week1/day1/assests/image copy 2.png
-week1/day1/assests/image copy.png
-week1/day1/assests/image.png
+## 🎯 Outcome
+
+By completing this task, the following skills were achieved:
+
+* Python successfully installed and verified
+* Virtual environment created and activated
+* VS Code configured for development
+* Git installed and configured
+* GitHub repository connected
+* Basic Git workflow understood and practiced
+
+---
+
+## 📁 Project Structure (Day 1)
+
+```text id="r8m2vn"
+inventory-management-package/
+│
+├── venv/
+├── week1/
+│   └── day1/
+│       └── assets/
+│           ├── python-version.png
+│           ├── venv-activation.png
+│           ├── vscode-workspace.png
+│           ├── vscode-extensions.png
+│           ├── git-version.png
+│           ├── git-config.png
+│           ├── git-clone.png
+│           └── git-push.png
+│
+├── main.py
+└── README.md
+```
+
+---
+
