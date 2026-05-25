@@ -21,7 +21,7 @@ class InventoryManager:
         except FileNotFoundError:
             logger.error(f"File not found at: {file_path}")
         
-    
+    # added logic of getting low stock quantity
     def get_low_stock_report(self, threshold: int = 5):
         low_stock_list = []
         for item in self.get_all_items():

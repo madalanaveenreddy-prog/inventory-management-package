@@ -9,9 +9,9 @@ def main():
     print("\n--- Current Valid Inventory ---")
     for item in manager.get_all_items():
         print(f"Product: {item.item_name} | Price: {item.price} | Qty: {item.quantity}")
-
+# added the loop and print statement to show low stock quantity
     for item in manager.get_low_stock_report(threshold=12):
         print(f": {item.item_name} is running low! Qty left: {item.quantity}")
 
 if __name__ == "__main__":
-    main()
+    main() 
