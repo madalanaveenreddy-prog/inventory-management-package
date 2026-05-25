@@ -20,11 +20,10 @@ class InventoryManager:
                         logger.error(f"Validation Failed for row {row}: {e}")
         except FileNotFoundError:
             logger.error(f"File not found at: {file_path}")
-        
+    # adding list comprehension logic
     def get_low_stock_report(self, threshold: int = 5):
         return [item for item in self.__items if int(item.quantity) < threshold]
 
     
     def get_all_items(self):
-        """Returns all loaded items."""
         return self.__items
