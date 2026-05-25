@@ -12,7 +12,7 @@ class InventoryManager:
                 reader = csv.DictReader(file)
                 for row in reader:
                     try:
-                        # Pydantic validition
+                        # Pydantic validation
                         validated_item = ItemModel(**row)
                         self.__items.append(validated_item)
                         logger.info(f"Successfully loaded: {validated_item.item_name}")
@@ -20,14 +20,10 @@ class InventoryManager:
                         logger.error(f"Validation Failed for row {row}: {e}")
         except FileNotFoundError:
             logger.error(f"File not found at: {file_path}")
-        
-    # added logic of getting low stock quantity
+    # adding list comprehension logic
     def get_low_stock_report(self, threshold: int = 5):
-        low_stock_list = []
-        for item in self.get_all_items():
-            if item.quantity < threshold:
-                low_stock_list.append(item)
-        return low_stock_list
+        return [item for item in self.__items if int(item.quantity) < threshold]
 
+    
     def get_all_items(self):
         return self.__items
