@@ -11,10 +11,8 @@ SECRET_KEY = "SUPER_SECRET_KEY_DONT_SHARE_THIS"
 ALGORITHM = "HS256"                              
 ACCESS_TOKEN_EXPIRE_MINUTES = 15                 
 
-# పాస్‌వర్డ్ హ్యాషింగ్ కోసం (BCrypt)
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# టోకెన్ ఎక్కడి నుండి తీసుకోవాలో చెప్పే FastAPI టూల్
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 app = FastAPI()
@@ -52,11 +50,10 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
 async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="టోకెన్ చెల్లాబాటదు లేదా యూజర్ ఎవరో తెలియదు",
+        detail="token does not valid"
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
-        # టోకెన్‌ను డీకోడ్ చేస్తున్నాం
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
         if username is None:
